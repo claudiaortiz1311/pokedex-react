@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+
 import PokemonCard from "./PokemonCard";
 
 export default class PokemonList extends Component {
@@ -9,7 +10,7 @@ export default class PokemonList extends Component {
   };
 
   async componentDidMount() {
-    const res = axios.get(this.state.url);
+    const res = await axios.get(this.state.url);
     this.setState({ pokemon: res.data["results"] });
   }
 
@@ -23,7 +24,7 @@ export default class PokemonList extends Component {
                 key={pokemon.name}
                 name={pokemon.name}
                 url={pokemon.url}
-              ></PokemonCard>
+              />
             ))}
           </div>
         ) : (
