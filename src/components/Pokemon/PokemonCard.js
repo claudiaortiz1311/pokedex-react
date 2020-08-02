@@ -80,7 +80,7 @@ export default class PokemonCard extends Component {
                   ? null
                   : { display: "block" }
               }
-            ></Sprite>
+            />
             {this.state.toManyRequests ? (
               <h6 className="mx-auto">
                 <span className="badge badge-danger mt-2">
