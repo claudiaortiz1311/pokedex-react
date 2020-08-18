@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import PokemonLogo from "../../pokemon_logo_PNG9.png";
 
 export default class NavBar extends Component {
   render() {
@@ -10,7 +10,9 @@ export default class NavBar extends Component {
             href=""
             className="navbar-brand col-sm-3 col-md-2 mr-0 align-items-center"
           >
-            Pokédex
+            <div className="header-logo-pokemon">
+              <img src={PokemonLogo} alt="Pokedex" />
+            </div>
           </a>
         </nav>
       </div>

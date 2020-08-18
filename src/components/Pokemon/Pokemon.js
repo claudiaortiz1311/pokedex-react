@@ -191,7 +191,7 @@ export default class Pokemon extends Component {
         <div className="card">
           <div className="card-header">
             <div className="row">
-              <div className="col-5">
+              <div className="col-5 card--id">
                 <h5>{this.state.pokemonIndex}</h5>
               </div>
               <div className="col-7">
@@ -403,9 +403,6 @@ export default class Pokemon extends Component {
                 </div>
 
                 <div className="row">
-                  <div className="col-6">
-                    <h6 className="float-right">Gender Ratio:</h6>
-                  </div>
                   <div className="col-6">
                     <h6 className="float-right">Gender Ratio:</h6>
                   </div>

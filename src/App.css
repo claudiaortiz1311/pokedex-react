@@ -8,5 +8,68 @@
 }
 
 .navbar {
-  background-color: #ef5350 !important;
+  background-color: #dc143c !important;
+  position: fixed;
+  top: 0; /* Stay on top */
+  width: 100%;
+  transition: top 0.3s;
+}
+
+img {
+  width: 150px;
+  margin-right: 100px;
+}
+
+.title-id {
+  text-align: center;
+  color: #e4c439;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.card {
+  width: 12rem auto;
+  background: #444;
+  color: #e4c439;
+  padding: 1rem;
+  border-radius: 10px;
+  border-top: 0.5px solid #cebf7b;
+  border-bottom: 0.5px solid #cebf7b;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s ease-in-out all;
+}
+
+.card-header-id {
+  background: #cebf7b;
+  width: 3rem;
+  color: #333;
+  padding: 0.1rem;
+  font-weight: 700;
+  position: absolute;
+  border-radius: 0 0 10px 0;
+  top: 0;
+  left: 0;
+}
+
+.card-title {
+  color: #e4c439;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.card--id {
+  background: #cebf7b;
+  width: 3rem;
+  color: #333;
+  padding: 0.1rem;
+  font-weight: 700;
+  position: absolute;
+  border-radius: 0 0 10px 0;
+  top: 0;
+  left: 0;
 }

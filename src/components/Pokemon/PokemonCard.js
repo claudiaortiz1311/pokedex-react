@@ -60,7 +60,7 @@ export default class PokemonCard extends Component {
       <div className="col-md-3 col-sm-6 mb-5">
         <StyledLink to={`pokemon/${this.state.pokemonIndex}`}>
           <Card className="card">
-            <h5 className="card-header">{this.state.pokemonIndex}</h5>
+            <h5 className="card-header-id">{this.state.pokemonIndex}</h5>
             {this.state.imageLoading ? (
               <img
                 src={spinner}
@@ -69,7 +69,7 @@ export default class PokemonCard extends Component {
               />
             ) : null}
             <Sprite
-              className="card-img-top rounded mx-auto mt-2"
+              className="card-img-top rounded mx-auto mt-4"
               onLoad={() => this.setState({ imageLoading: false })}
               onError={() => this.setState({ toManyRequests: true })}
               src={this.state.imageUrl}

@@ -3,9 +3,11 @@ import axios from "axios";
 
 import PokemonCard from "./PokemonCard";
 
+import spinner from "../Pokemon/spinner-Dual.gif";
+
 export default class PokemonList extends Component {
   state = {
-    url: "https://pokeapi.co/api/v2/pokemon/",
+    url: "https://pokeapi.co/api/v2/pokemon/?limit=151&offset=0",
     pokemon: null,
   };
 
@@ -28,8 +30,24 @@ export default class PokemonList extends Component {
             ))}
           </div>
         ) : (
-          <h1>Loading Pokemon</h1>
+          <img
+            src={spinner}
+            style={{
+              width: "10em",
+              height: "10em",
+              alignItems: "center",
+            }}
+            className="card-img-top rounded mx-auto d-block mt-2"
+          />
         )}
+
+        <div className="card-footer text-muted">
+          This content belongs to The Pokémon Company, I only use it for
+          educational purposes - Data From{" "}
+          <a href="https://pokeapi.co/" target="_blank" className="card-link">
+            PokeAPI.co
+          </a>
+        </div>
       </React.Fragment>
     );
   }

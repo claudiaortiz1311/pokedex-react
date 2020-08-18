@@ -8,7 +8,7 @@ import NavBar from "./components/Layout/NavBar";
 import Dashboard from "./components/Layout/Dashboard";
 import Pokemon from "./components/Pokemon/Pokemon";
 
-import backgroundImage from "./pattern.png";
+import backgroundImage from "./patternPikachu.png";
 
 class App extends Component {
   render() {
@@ -18,10 +18,12 @@ class App extends Component {
           className="App"
           style={{
             background: `url(${backgroundImage})`,
-            backgroundColor: "#000000",
+            backgroundColor: "#DC143C",
           }}
         >
           <NavBar />
+          <br></br>
+          <br />
           <div className="container">
             <Switch>
               <Route exact path="/" component={Dashboard} />
